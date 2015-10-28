@@ -1,0 +1,6 @@
+<h1><%= @team.name %></h1>
+<p> <%= @team.name %>'s mascot is <%= @team.mascot %></p>
+<% @team.players.each do |player| %>
+<p> <%= player.name %> </p>
+<% end  %>
+<%= image_tag(@team.image, alt: 'alt text is really required', width:200) %>

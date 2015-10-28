@@ -1,0 +1,15 @@
+<%= form_for @player do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name  %>
+  <br>
+  <%= f.label :position %>
+  <%= f.text_field :position %>
+  <br>
+  <%= f.label :species %>
+  <%= f.text_field :species %>
+  <br>
+  <%= f.label :team_id %>
+  <%= f.number_field :team_id %>
+  <br>
+  <%= f.submit 'Spawn Player!' %>
+<% end %>
